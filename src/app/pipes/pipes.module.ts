@@ -11,7 +11,8 @@ import { ParesPipe } from './pares.pipe';
     CommonModule
   ],
   exports: [
-    ImagenPipePipe
+    ImagenPipePipe,
+    ParesPipe
   ]
 })
 export class PipesModule { }
