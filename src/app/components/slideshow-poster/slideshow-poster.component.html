@@ -1,12 +1,7 @@
 <ion-slides [options]="slideOpts">
-  <ion-slide *ngFor="let pelicula of peliculas">
+  <ion-slide *ngFor="let pelicula of peliculas" class="poster">
     <ion-card>
-      <ion-img
-        [src]="pelicula.poster_path | imagenPipe"
-        width="110"
-        height="160"
-      ></ion-img>
-      <!-- <img [src]="pelicula.poster_path | imagenPipe"/> -->
+      <img [src]="pelicula.poster_path | imagenPipe"/>
     </ion-card>
   </ion-slide>
 </ion-slides>
